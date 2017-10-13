@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+	int a, b=0;
+	char s[80];
+	for(a=0; a<80; a++)
+	{
+		cin.get(s[a]);
+		b++;
+		if(s[a]=='\n')
+		{
+			break;
+		}
+	}
+	for(a=0; a<=b; a++)
+	{
+		if(s[a]==' ')
+		{
+			cout<<"%20";
+		}
+		else
+		{
+			cout<<s[a];
+		}
+	}
+return 0;
+}
